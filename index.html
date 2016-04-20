@@ -1,31 +1,110 @@
 ---
-layout: default
+layout: home
 ---
 
-<div class="home">
-
-  <p>Decrease the time it takes your company to reach an acceptable level of risk.</p>
-
-  <p><a href="#" class="btn btn-default">Call to Action</a></p>
-
-  <p><a href="#" class="btn btn-default">Secondary CTA</a></p>
-
-  <hr />
-
-  <h1 class="page-heading">Latest News</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="hero">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h1>What's your tolerance for risk?</h1>
+        <p class="lead">It's our mission to help every mine reach ALARP risk tolerance.</p>
+        <ul class="list-inline">
+          <li><a href="#quiz" class="btn btn-lg btn-hero">TEST YOUR TOLERANCE</a></li>
+          <li><a href="#about" class="btn btn-lg btn-hero smooth_scroll">READ MORE</a></li>
+          <li><a href="/signup" class="btn btn-lg btn-hero">SIGN UP</a></li>
+        <p><em><a href="#about" class="smooth_scroll">Read more ↓ </a></em></p>
+      </div>
+    </div>
+  </div>
 </div>
+
+<section id="about">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-offset-2 col-md-8">
+        <h2>About the Journey Program</h2>
+        <p class="lead">A mission to eradicate fatalities on mine sites.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-offset-3 col-md-6">
+        <hr />
+        <p>Every three weeks, someone <strong>dies</strong> on a mine site in Western Australia. It's totally avoidable, but that's not the worst of it: Globally, someone dies in the primary resources sector every 35 minutes.</p>
+        <p><strong>We're here to reduce those figures to zero.</strong></p>
+        <p>The Journey Program is a novel approach to organisational safety management, based on improving the <strong>performance</strong> and <strong>profitability</strong> of mine sites everywhere.</p>
+      </div>
+    </div>
+    <div class="row space-me-double">
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-ambulance fa-4x" aria-hidden="true"></i></h3>
+          </div>
+          <div class="panel-body">
+            <strong>Benefit number one</strong> Predict the likelihood of a serious incident in your operation.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-line-chart fa-4x" aria-hidden="true"></i></h3>
+          </div>
+          <div class="panel-body">
+            <strong>Benefit number two</strong> is beneficial because of all the benefits it brings!
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-clock-o fa-4x" aria-hidden="true"></i></h3>
+          </div>
+          <div class="panel-body">
+            <strong>Benefit number THREE</strong> Decrease the time it takes your operation to reach an acceptable level of risk.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-offset-2 col-md-8">
+        <h2>Focused on Performance, Not Just Safety</h2>
+        <p class="lead">It's a positive feedback loop: A safe mine is a more productive mine.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-offset-3 col-md-6">
+        <hr />
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <img src="/img/dustyBoots.jpg" />
+
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="blogroll">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-3 col-md-6">
+
+        <h2 class="page-heading">Latest News</h2>
+
+        <ul class="post-list">
+          {% for post in site.posts %}
+            <li>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+              <h3>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h2>
+            </li>
+          {% endfor %}
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</section>

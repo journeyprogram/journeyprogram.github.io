@@ -10,19 +10,102 @@ body {
 hr {
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
+  border-color: rgba(61, 70, 77, 1.00);
+}
+section {
+  padding-top: $spacing-unit * 1.5;
+  padding-bottom: $spacing-unit * 1.5;
+}
+img {
+  @extend .space-me;
+  width: 100%;
 }
 /* =========================
         General Classes
 ========================= */
-
+.space-me {
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
+}
+.space-me-double {
+  margin-top: $spacing-unit * 2;
+  margin-bottom: $spacing-unit * 2;
+}
 /* =========================
         Header
 ========================= */
-
+#home {
+  .site-header {
+    border-top: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    background: rgba(192, 180, 167, 0.20);
+  }
+  .site-title,
+  .page-link {
+    color: #fff;
+  }
+}
 /* =========================
         Homepage
 ========================= */
-
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.10)) , url('/img/mine.jpg') bottom;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  h1,
+  .lead {
+    text-shadow: 0 1px 5px rgba(0,0,0,0.55);
+    margin-bottom: $spacing-unit * 1.5;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  .lead {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .btn-hero {
+    background: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    transition: 0.4s ease;
+    margin-bottom: $spacing-unit;
+    font-weight: 700;
+  }
+  .btn-hero:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: $text-color;
+  }
+  a {
+    color: #fff;
+  }
+}
+#about {
+  background: rgba(241, 243, 242, 1.00);
+  .panel-heading {
+    text-align: center;
+    background: #fff;
+  }
+  .panel-title {
+    @extend .space-me;
+    font-weight: bold;
+  }
+}
 /* =========================
         Footer
 ========================= */
+footer {
+  li:last-child {
+    display: none;
+  }
+}
+a {
+  color: $brand-color;
+}
