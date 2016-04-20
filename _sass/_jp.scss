@@ -7,6 +7,10 @@ body {
   font-size: 16px;
   line-height: 1.7rem;
 }
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
 hr {
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
@@ -23,6 +27,18 @@ img {
 /* =========================
         General Classes
 ========================= */
+.btn-hero {
+  background: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+  transition: 0.4s ease;
+  margin-bottom: $spacing-unit;
+  font-weight: 700;
+}
+.btn-hero:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: $text-color;
+}
 .space-me {
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
@@ -40,7 +56,7 @@ img {
     top: 0;
     position: absolute;
     width: 100%;
-    background: rgba(192, 180, 167, 0.20);
+    // background: rgba(192, 180, 167, 0.20);
   }
   .site-title,
   .page-link {
@@ -51,8 +67,9 @@ img {
         Homepage
 ========================= */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.10)) , url('/img/mine.jpg') bottom;
-  background-size: cover;
+  // background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.10)) , url('/img/mine.jpg') bottom;
+  // background-size: cover;
+  background: url("/img/herobg.png") repeat;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -71,18 +88,7 @@ img {
     font-weight: 500;
     font-size: 1.5rem;
   }
-  .btn-hero {
-    background: transparent;
-    border: 3px solid #fff;
-    color: #fff;
-    transition: 0.4s ease;
-    margin-bottom: $spacing-unit;
-    font-weight: 700;
-  }
-  .btn-hero:hover {
-    background: rgba(255, 255, 255, 0.5);
-    color: $text-color;
-  }
+
   a {
     color: #fff;
   }
@@ -96,6 +102,34 @@ img {
   .panel-title {
     @extend .space-me;
     font-weight: bold;
+  }
+}
+#tolerance {
+  color: #fff;
+  background: $dark-color;
+}
+#marcus {
+  padding-bottom: 0px;
+  color: #fff;
+  background: #ef2d3f;
+  .row {
+    display: flex;
+  }
+  .col-sm-6:first-child {
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
+  }
+  .col-sm-6:last-child {
+    background: linear-gradient(rgba(239, 45, 63, 0.00), rgba(239, 45, 63, 0.00)) , url('/img/jonsnow.png') bottom no-repeat;
+    background-size: contain;
+    min-height: 400px;
+    align-self: flex-end;
+  }
+}
+#newsroll {
+  @extend #about;
+  .panel-heading {
+    min-height: 200px;
   }
 }
 /* =========================

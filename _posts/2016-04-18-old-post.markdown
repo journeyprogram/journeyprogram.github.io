@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Marcus Interviewed at Australasian Oil and Gas Expo"
+date:   2016-04-18 11:46:02 +0800
+categories: jekyll update
+image: /img/bikeSlide.jpg
+---
+
+Safety Collective partner Dr. Marcus Cattani was interviewed at the Perth Australasian Oil and Gas Expo 2015 where he explained how a combination of safety experts (The Safety Collective) can help companies understand gaps that can elevate risks, as well as main issues and solutions to reduce harm in the workplace.

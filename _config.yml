@@ -16,3 +16,14 @@ url: "http://journeyprogram.com.au" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+permalink: pretty
+
+# Defaults
+defaults:
+ -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+     author: Marcus Cattani
+     layout: "post"
