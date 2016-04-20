@@ -1,5 +1,4 @@
 # Journey Program Readme
-========================
 
 ### Things you should know
 
