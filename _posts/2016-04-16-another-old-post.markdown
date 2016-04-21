@@ -4,6 +4,7 @@ title:  "Five steps to being more like Marcus"
 date:   2016-04-16 11:46:02 +0800
 categories: jekyll update
 image: /img/carSlide.jpg
+permalink: belikemarcus
 ---
 
 In this article Marcus Cattani describes some of the organisational issues associated with preventing workplace harm and then offer a solution comprising 5 steps.

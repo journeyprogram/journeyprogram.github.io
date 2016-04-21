@@ -7,6 +7,12 @@ body {
   font-size: 16px;
   line-height: 1.7rem;
 }
+html {
+  position: relative;
+}
+body {
+  margin: 0 0 238px; // Bottom margin important for sticky footer!
+}
 h1 {
   text-transform: uppercase;
   font-weight: 700;
@@ -107,11 +113,19 @@ img {
 #tolerance {
   color: #fff;
   background: $dark-color;
+  padding-top: $spacing-unit * 2;
+  padding-bottom: $spacing-unit * 2;
+  iframe {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #75c0bd;
+    margin-bottom: $spacing-unit;
+  }
 }
 #marcus {
   padding-bottom: 0px;
   color: #fff;
-  background: #ef2d3f;
+  background: rgba(239, 45, 63, 0.90);
   .row {
     display: flex;
   }
@@ -136,10 +150,20 @@ img {
         Footer
 ========================= */
 footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 238px;
+  width: 100%;
+  background: url('/img/herobg.png') repeat;
+  color: #fff;
   li:last-child {
     display: none;
   }
 }
 a {
-  color: $brand-color;
+  color: #75c0bd;
+  &:hover {
+    color: darken(#75c0bd, 10%);
+  }
 }

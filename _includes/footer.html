@@ -1,19 +1,19 @@
 <footer class="site-footer">
   <div class="container">
-    <div class="row text-center space-me">
-      <div class="col-md-12">
-          <h2>{{ site.title }}</h2>
-          <p>{{ site.description }}</p>
-          <ul class="list-inline">
-            {% for page in site.pages %}
-              {% if page.title %}
-                <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-                <li>•</li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-          <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-          <p class="space-me small">&copy; Dr Marcus Cattani, 2016 and beyond...</p>
+    <div class="row space-me">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h4>{{ site.title }}</h4>
+        <ul class="list-inline small">
+          <li><a href="/">Journey Program</a></li>
+          <li>•</li>
+          {% for page in site.pages %}
+            {% if page.title %}
+              <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+              <li>•</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        <p class="small">&copy; Dr Marcus Cattani, 2016 and beyond...</p>
       </div>
     </div>
   </div>

@@ -17,7 +17,7 @@ $("a[href^='https://']").attr("target","_blank");
 $('a.smooth_scroll').click(function(){
   $('html, body').animate({
     scrollTop: $( $(this).attr('href') ).offset().top
-  }, 500);
+  }, 600);
   return false;
 });
 
