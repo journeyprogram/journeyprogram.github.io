@@ -56,7 +56,7 @@ img {
     top: 0;
     position: absolute;
     width: 100%;
-    // background: rgba(192, 180, 167, 0.20);
+    background: rgba(192, 180, 167, 0.15);
   }
   .site-title,
   .page-link {
@@ -67,9 +67,9 @@ img {
         Homepage
 ========================= */
 .hero {
-  // background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.10)) , url('/img/mine.jpg') bottom;
-  // background-size: cover;
-  background: url("/img/herobg.png") repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.10)) , url('/img/mine.jpg') bottom;
+  background-size: cover;
+  // background: url("/img/herobg.png") repeat;
   min-height: 100vh;
   display: flex;
   align-items: center;
