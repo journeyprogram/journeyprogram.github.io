@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: sidenav
 title: About
+subtitle: Learn more about the Journey Program
 permalink: /about/
 ---
 

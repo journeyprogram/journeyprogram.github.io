@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="sidenav-header pad-me-double">
+      <div class="container">
+        <div class="row ">
+          <div class="col-sm-12 text-center">
+            <h2>{{ page.title }}</h2>
+            <p class="lead">{{ page.subtitle }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container sidenav-content pad-me">
+      <div class="row">
+        
+        <div class="col-md-3">
+          <div class="list-group">
+            <a href="/mission" class="list-group-item">Mission</a>
+            <a href="/product" class="list-group-item">Product</a>
+            <a href="/about" class="list-group-item">About the Journey Program</a>
+            <a href="/marcus" class="list-group-item">About Marcus Cattani</a>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+
+          {{ content }}
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <section id="bottomcta">
+      <div class="container">
+        <div class="row space-me">
+          <div class="col-md-5 col-md-offset-2">
+            <h3>Ready to start your Journey?</h3>
+            <p class="">Get started with a free assessment of your current tolerance.</p>
+          </div>
+          <div class="col-md-3 text-center">
+            <a href="/signup" class="btn btn-lg btn-success">Big Friendly Button!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+
+  </body>
+
+  <script src="/js/jquery-2.2.2.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/jpscripts.js"></script>
+
+
+</html>

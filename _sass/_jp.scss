@@ -11,7 +11,17 @@ html {
   position: relative;
 }
 body {
-  margin: 0 0 238px; // Bottom margin important for sticky footer!
+  margin: 0; // Bottom margin set by jpscript.js for sticky footer!
+}
+blockquote {
+  @extend .space-me;
+  letter-spacing: 0px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  footer {
+    text-align: right;
+    padding-top: 1rem;
+  }
 }
 h1 {
   text-transform: uppercase;
@@ -45,9 +55,28 @@ img {
   background: rgba(255, 255, 255, 0.5);
   color: $text-color;
 }
+.pad-me {
+  padding: $spacing-unit 0;
+}
+.pad-me-double {
+  padding-top: $spacing-unit * 2;
+  padding-bottom: $spacing-unit * 2;
+}
+.panel-case-study {
+  .panel-heading {
+    min-height: 200px;
+    padding: 0;
+    img {
+      margin: 0;
+    }
+  }
+  .panel-body {
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
+  }
+}
 .space-me {
-  margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit;
+  margin: $spacing-unit 0;
 }
 .space-me-double {
   margin-top: $spacing-unit * 2;
@@ -56,6 +85,9 @@ img {
 /* =========================
         Header
 ========================= */
+.site-header {
+  background: #fff;
+}
 #home {
   .site-header {
     border-top: 0;
@@ -100,7 +132,6 @@ img {
   }
 }
 #about {
-  background: rgba(241, 243, 242, 1.00);
   .panel-heading {
     text-align: center;
     background: #fff;
@@ -142,18 +173,29 @@ img {
 }
 #newsroll {
   @extend #about;
-  .panel-heading {
-    min-height: 200px;
-  }
+}
+/* =========================
+        Pages General
+========================= */
+#bottomcta {
+  background: #fff;
+}
+.sidenav-header {
+  background: url('/img/desert.jpg') center;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.55);
+}
+.sidenav-content {
+  padding-bottom: $spacing-unit * 2;
 }
 /* =========================
         Footer
 ========================= */
-footer {
+footer.site-footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 238px;
   width: 100%;
   background: url('/img/herobg.png') repeat;
   color: #fff;
