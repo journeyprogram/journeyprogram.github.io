@@ -1,12 +1,13 @@
 ---
-layout: home
+layout: htmlpage
+bodyid: home
 ---
 
 <div class="hero">
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12 text-center">
-        <h1>What's your tolerance for risk?</h1>
+        <h1>How high is your tolerance for risk?</h1>
         <p class="lead">It's our mission to help every mine reach ALARP risk tolerance.</p>
         <ul class="list-inline">
           <li><a href="#tolerance" class="btn btn-lg btn-hero smooth_scroll">TEST YOUR TOLERANCE</a></li>
@@ -17,6 +18,28 @@ layout: home
     </div>
   </div>
 </div>
+
+<section id="tolerance">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-5">
+        <h2>Test your tolerance</h1>
+        <p class="lead">A five question test isn't enough to accurately analyse your safety performance but at least it might make you ask the question; is it time we had a bit of a sit down and thought about this again?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p><a href="/" class="btn btn-hero">Learn How We Process Risk</a></p>
+        <p>Tolerance assessment not loading? <a href="https://samjamead.typeform.com/to/kHkmFu" target="_blank">Access it here</a>.</p>
+      </div>
+
+      <div class="col-md-offset-1 col-md-6">
+        <!-- Change the width and height values to suit you best -->
+        <div class="typeform-widget" data-url="https://samjamead.typeform.com/to/kHkmFu" data-text="Test Your Tolerance"></div>
+        <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <section id="about">
   <div class="container">
@@ -100,24 +123,6 @@ layout: home
   </div>
 </section>
 
-<section id="tolerance">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-offset-2 col-md-8 text-center">
-        <h2>Test your tolerance</h1>
-        <p class="lead">A five question test isn't enough to accurately analyse your safety performance but at least it might make you ask the question; is it time we thought about this again?</p>
-
-        <!-- Change the width and height values to suit you best -->
-        <div class="typeform-widget" data-url="https://samjamead.typeform.com/to/kHkmFu" data-text="Test Your Tolerance"></div>
-        <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-
-        <p>You've just taken the first step on the journey. Great job!</p>
-
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="marcus">
   <div class="container">
     <div class="row">
@@ -167,16 +172,4 @@ layout: home
   </div>
 </section>
 
-<section id="bottomcta">
-  <div class="container">
-    <div class="row space-me">
-      <div class="col-md-5 col-md-offset-2">
-        <h3>Ready to start your Journey?</h3>
-        <p class="">Get started with a free assessment of your current tolerance.</p>
-      </div>
-      <div class="col-md-3 text-center">
-        <a href="/signup" class="btn btn-lg btn-success">Big Friendly Button!</a>
-      </div>
-    </div>
-  </div>
-</section>
+{% include bottomcta.html %}

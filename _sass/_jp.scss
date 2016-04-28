@@ -23,8 +23,10 @@ blockquote {
     padding-top: 1rem;
   }
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-font-family;
+}
 h1 {
-  text-transform: uppercase;
   font-weight: 700;
 }
 hr {
@@ -62,6 +64,9 @@ img {
   padding-top: $spacing-unit * 2;
   padding-bottom: $spacing-unit * 2;
 }
+.pad-top {
+  padding-top: $spacing-unit;
+}
 .panel-case-study {
   .panel-heading {
     min-height: 200px;
@@ -82,13 +87,20 @@ img {
   margin-top: $spacing-unit * 2;
   margin-bottom: $spacing-unit * 2;
 }
+.white-bg {
+  background: #fff;
+}
 /* =========================
         Header
 ========================= */
 .site-header {
   background: #fff;
+  .trigger {
+    font-weight: 600;
+  }
 }
-#home {
+#home,
+#product {
   .site-header {
     border-top: 0;
     top: 0;
@@ -118,8 +130,6 @@ img {
     margin-bottom: $spacing-unit * 1.5;
   }
   h1 {
-    text-transform: uppercase;
-    font-weight: 700;
     font-size: 3rem;
   }
   .lead {
@@ -156,7 +166,7 @@ img {
 #marcus {
   padding-bottom: 0px;
   color: #fff;
-  background: rgba(239, 45, 63, 0.90);
+  background: #f36256;
   .row {
     display: flex;
   }
@@ -174,11 +184,34 @@ img {
 #newsroll {
   @extend #about;
 }
+
+// =========================
+//      Product Page
+// =========================
+#product-hero {
+  padding-top: $spacing-unit * 3;
+  padding-bottom: $spacing-unit * 2;
+  background: url('/img/product2.jpg') repeat-x;
+  color: #fff;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+#product-1,
+#product-3 {
+  @extend .white-bg;
+}
+#product-2 {
+  padding-bottom: 0;
+  img {
+    margin-bottom: 0;
+  }
+}
 /* =========================
         Pages General
 ========================= */
 #bottomcta {
-  background: #fff;
+  @extend .white-bg;
 }
 .sidenav-header {
   background: url('/img/desert.jpg') center;

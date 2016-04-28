@@ -3,7 +3,6 @@ layout: sidenav
 title: Mission
 subtitle: Launching in five, four, three, two...
 permalink: /mission/
-nav: main
 ---
 
 The Journey Program exists to enable every mine site in the world to achieve an ALARP level of acceptable risk.
