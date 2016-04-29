@@ -26,6 +26,18 @@ $('a.smooth_scroll').click(function(){
   return false;
 });
 
+// Set height of .feature-photo
+
+dynanicPhotoHeight();
+
+$( window ).resize(function() {
+  dynanicPhotoHeight();
+});
+
+function dynanicPhotoHeight() {
+  var featurePhotoWidth = $( ".feature-photo" ).width();
+  $(".feature-photo").css("height", (featurePhotoWidth * 0.66));
+}
 
 // Dynamically set bottom margin of body for sticky footer
 

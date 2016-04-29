@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $headings-font-family;
 }
 h1 {
-  font-weight: 700;
+  font-weight: 300;
 }
 hr {
   margin-top: $spacing-unit;
@@ -45,17 +45,32 @@ img {
 /* =========================
         General Classes
 ========================= */
-.btn-hero {
-  background: transparent;
-  border: 3px solid #fff;
-  color: #fff;
+.btn {
   transition: 0.4s ease;
-  margin-bottom: $spacing-unit;
-  font-weight: 700;
+  font-weight: 400;
+  padding: 10px 30px;
+  border-radius: 100px;
 }
-.btn-hero:hover {
-  background: rgba(255, 255, 255, 0.5);
-  color: $text-color;
+.btn-jp {
+  background: transparent;
+  border: 1px solid $brand-color;
+  color: $brand-color;
+  &:hover {
+    background: $brand-color;
+    color: #fff;
+  }
+}
+.btn-jp-inverse {
+  background: $brand-color;
+  border: 1px solid $brand-color;
+  color: #fff;
+  &:hover {
+    background: #fff;
+    color: $brand-color;
+  }
+}
+.label-jp {
+  background: $brand-color;
 }
 .pad-me {
   padding: $spacing-unit 0;
@@ -66,6 +81,9 @@ img {
 }
 .pad-top {
   padding-top: $spacing-unit;
+}
+.pad-bottom {
+  padding-bottom: $spacing-unit;
 }
 .panel-case-study {
   .panel-heading {
@@ -94,54 +112,39 @@ img {
         Header
 ========================= */
 .site-header {
+  border-top: 0;
+  border-color: $brand-color;
   background: #fff;
-  .trigger {
-    font-weight: 600;
-  }
-}
-#home,
-#product {
-  .site-header {
-    border-top: 0;
-    top: 0;
-    position: absolute;
-    width: 100%;
-    background: rgba(192, 180, 167, 0.15);
-  }
+  width: 100%;
   .site-title,
   .page-link {
-    color: #fff;
+    color: $brand-color;
+  }
+  .trigger {
+    font-weight: 600;
   }
 }
 /* =========================
         Homepage
 ========================= */
-.hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.10)) , url('/img/mine.jpg') bottom;
-  background-size: cover;
-  // background: url("/img/herobg.png") repeat;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  color: #fff;
-  h1,
-  .lead {
-    text-shadow: 0 1px 5px rgba(0,0,0,0.55);
-    margin-bottom: $spacing-unit * 1.5;
+#hero {
+  padding-bottom: 0;
+  img {
+    margin-bottom: 0;
   }
-  h1 {
-    font-size: 3rem;
-  }
-  .lead {
-    font-weight: 500;
-    font-size: 1.5rem;
-  }
-
-  a {
-    color: #fff;
+}
+.after-hero {
+  padding: 15px;
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+  ul {
+    margin: 0;
   }
 }
 #about {
+  background: #fff;
   .panel-heading {
     text-align: center;
     background: #fff;
@@ -151,38 +154,43 @@ img {
     font-weight: bold;
   }
 }
-#tolerance {
-  color: #fff;
-  background: $dark-color;
-  padding-top: $spacing-unit * 2;
-  padding-bottom: $spacing-unit * 2;
-  iframe {
-    width: 100%;
-    height: 500px;
-    border: 1px solid #75c0bd;
-    margin-bottom: $spacing-unit;
-  }
+.feature-photo {
+  width: 50%;
+  float: right;
+}
+.fp-left {
+  background: url('/img/mine.jpg') center;
+  background-size: cover;
+}
+.fp-right {
+  background: url('/img/dustyboots.jpg') center;
+  background-size: cover;
 }
 #marcus {
-  padding-bottom: 0px;
-  color: #fff;
-  background: #f36256;
-  .row {
+  background: #fff;
+  .marcus-wrapper {
+    width: 100%;
+    background: #fff;
+    border: 2px solid #ddd;
     display: flex;
+    align-items: stretch;
+    transition: 0.3s ease;
+    &:hover {
+      border-color: $brand-color;
+    }
+    .photo {
+      float: left;
+      margin-left: -1px;
+      width: 40%;
+      background: url('/img/jonsnow.jpg') center;
+      background-size: cover;
+    }
+    .info {
+      padding: $spacing-unit;
+      float: right;
+      width: 60%;
+    }
   }
-  .col-sm-6:first-child {
-    padding-top: $spacing-unit;
-    padding-bottom: $spacing-unit;
-  }
-  .col-sm-6:last-child {
-    background: linear-gradient(rgba(239, 45, 63, 0.00), rgba(239, 45, 63, 0.00)) , url('/img/jonsnow.png') bottom no-repeat;
-    background-size: contain;
-    min-height: 400px;
-    align-self: flex-end;
-  }
-}
-#newsroll {
-  @extend #about;
 }
 
 // =========================
@@ -191,7 +199,7 @@ img {
 #product-hero {
   padding-top: $spacing-unit * 3;
   padding-bottom: $spacing-unit * 2;
-  background: url('/img/product2.jpg') repeat-x;
+  background: url('/img/product2.png') repeat-x;
   color: #fff;
   height: 50vh;
   display: flex;
@@ -201,17 +209,19 @@ img {
 #product-3 {
   @extend .white-bg;
 }
-#product-2 {
-  padding-bottom: 0;
-  img {
-    margin-bottom: 0;
-  }
-}
+
 /* =========================
         Pages General
 ========================= */
+iframe {
+  width: 100%;
+  height: 500px;
+  border: 1px solid $brand-color;
+  margin-bottom: $spacing-unit;
+}
 #bottomcta {
   @extend .white-bg;
+  border-top: 1px solid #e0e0e0;
 }
 .sidenav-header {
   background: url('/img/desert.jpg') center;
@@ -237,8 +247,8 @@ footer.site-footer {
   }
 }
 a {
-  color: #75c0bd;
+  color: #f36256;
   &:hover {
-    color: darken(#75c0bd, 10%);
+    color: darken(#f36256, 10%);
   }
 }
