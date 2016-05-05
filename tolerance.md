@@ -4,7 +4,7 @@ title: Tolerance
 permalink: /tolerance/
 ---
 
-### Tolerance
+### Test your current risk tolerance
 
 A big part of understanding the liklihood of an incident occuring is understanding how your company tolerates risk. You may have a medium tolerance for risk accross every business unit; or you might have a very low tolerance for risk in some areas, with very high tolerance in others.
 

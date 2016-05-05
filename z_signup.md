@@ -2,7 +2,6 @@
 layout: page
 title: Sign Up
 permalink: /signup/
-nav: main
 ---
 
 Become a part of the journey to zero fatalities.
