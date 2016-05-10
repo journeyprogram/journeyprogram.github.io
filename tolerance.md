@@ -6,6 +6,8 @@ permalink: /tolerance/
 
 ### Test your current risk tolerance
 
+<!-- http://ebook.aprs.com.au/i/389599-australasian-mine-safety-journal-issue-22-spring-2014/15 -->
+
 A big part of understanding the liklihood of an incident occuring is understanding how your company tolerates risk. You may have a medium tolerance for risk accross every business unit; or you might have a very low tolerance for risk in some areas, with very high tolerance in others.
 
 We put together this quiz for you to find out how your company tolerates risk.

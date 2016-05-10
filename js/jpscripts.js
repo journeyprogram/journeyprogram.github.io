@@ -52,4 +52,16 @@ function stickyFooter() {
   $("body").css("margin-bottom", bodyBottomMargin);
 }
 
+// Get height of the page and set signup min height
+function signupHeight() {
+ var desiredHeight = $( window ).height() - $(".site-header").outerHeight() - $(".site-footer").outerHeight();
+ $("#signup").css("min-height", desiredHeight);
+}
+
+signupHeight();
+
+$( window ).resize(function() {
+ signupHeight();
+});
+
 console.log(runCheck);

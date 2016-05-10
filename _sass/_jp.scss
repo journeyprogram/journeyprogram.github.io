@@ -53,11 +53,11 @@ img {
 }
 .btn-jp {
   background: transparent;
-  border: 1px solid $brand-color;
-  color: $brand-color;
+  border: 1px solid #fff;
+  color: #fff;
   &:hover {
-    background: $brand-color;
-    color: #fff;
+    background: #fff;
+    color: $brand-color;
   }
 }
 .btn-jp-inverse {
@@ -120,10 +120,18 @@ img {
   .page-link {
     color: $brand-color;
   }
+  .site-title {
+    img {
+      display: inline-block;
+      width: 100px;
+      margin: -5px 0px 0px 15px;
+    }
+  }
   .trigger {
     font-weight: 600;
     .btn-jp-inverse {
       padding: 5px 20px;
+      margin-top: -5px;
     }
   }
 }
@@ -168,11 +176,11 @@ img {
   float: right;
 }
 .fp-left {
-  background: url('/img/mine.jpg') center;
+  background: url('/img/sparks.jpg') center;
   background-size: cover;
 }
 .fp-right {
-  background: url('/img/dustyBoots.jpg') center;
+  background: url('/img/mine.jpg') center;
   background-size: cover;
 }
 #marcus {
@@ -207,17 +215,24 @@ img {
 // =========================
 #product-hero {
   padding-top: $spacing-unit * 3;
-  padding-bottom: $spacing-unit * 2;
+  padding-bottom: $spacing-unit * 3;
   background: url('/img/product2.png') repeat-x;
   color: #fff;
-  height: 50vh;
-  display: flex;
-  align-items: center;
+  img {
+    width: 300px;
+  }
 }
 #product-1,
 #product-3,
 #help-1 {
   @extend .white-bg;
+}
+#product-1,
+#product-4 {
+  .row {
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* =========================
@@ -241,6 +256,37 @@ iframe {
 }
 .sidenav-content {
   padding-bottom: $spacing-unit * 2;
+}
+/* =========================
+        Sign Up Page
+========================= */
+#signup {
+  background: url('/img/herobg.png') repeat;
+  .signup-panel {
+    background: #fff;
+    border: 2px solid $brand-color;
+    border-radius: 5px;
+    margin-top: $spacing-unit;
+    padding: $spacing-unit;
+    padding-bottom: $spacing-unit * 2;
+    .fields {
+      padding-top: $spacing-unit / 2;
+      padding-bottom: $spacing-unit / 2;
+      div {
+        margin-top: $spacing-unit / 2;
+        margin-bottom: $spacing-unit / 2;
+      }
+    }
+    label {
+      min-width: 100px;
+      margin-right: 15px;
+    }
+    input[type="email"],
+    input[type="text"] {
+      padding-left: 7px;
+      width: 60%;
+    }
+  }
 }
 /* =========================
         Footer
