@@ -222,13 +222,7 @@ img {
     width: 300px;
   }
 }
-#product-1,
-#product-3,
-#help-1 {
-  @extend .white-bg;
-}
-#product-1,
-#product-4 {
+.product{
   .row {
     display: flex;
     align-items: center;
@@ -256,6 +250,21 @@ iframe {
 }
 .sidenav-content {
   padding-bottom: $spacing-unit * 2;
+}
+/* =========================
+        Tolerance post
+========================= */
+#tolerance-hero {
+  padding-top: 250px;
+  padding-bottom: 250px;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/img/carSlide.jpg') center;
+  color: #fff;
+  background-size: cover;
+  .textbox {
+    padding: $spacing-unit;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+  }
 }
 /* =========================
         Sign Up Page

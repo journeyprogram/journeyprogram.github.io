@@ -111,8 +111,9 @@ bodyid: home
           </div>
           <div class="info">
             <div>
-              <h2>World Class Vision</h2>
-              <p>Meet Marcus, Dr, Supreme Overlord of the safety injury. Marcus will change your life in ways you currently can't imagine. Just wait and see! Pommy ipsum ponce could be a bit of a git cornish pasty a reet bobbydazzler, numbskull clock round the earhole scally man and his whippet, getting on my wick off with her head a right royal knees up oopsy-daisies.</p>
+              <h2>Lead by world class vision</h2>
+              <p>Meet Dr Marcus Cattani; the driving force behind the Journey Program.</p>
+              <p>Marcus has over 25 years experience in the injury prevention industry from both an industry and academic perspective. His world-leading research into risk taking behaviour and appetite has paved the way for legislation changes in Western Australia.</p>
               <p><a href="/marcus/">Read more about Dr Cattani &nbsp; <i class="fa fa-arrow-right"></i></a></p>
             </div>
           </div>
@@ -127,13 +128,13 @@ bodyid: home
     <div class="row">
       <div class="col-md-offset-3 col-md-6 text-center">
 
-        <h2>Latest News</h2>
+        <h2>Help Yourself</h2>
         <hr />
-        <p class="lead">Keep up to date with the Journey Program</p>
+        <p class="lead">Make use of publicly available Journey Program resources:</p>
       </div>
       <div class="row">
 
-        {% for post in site.posts limit:6 %}
+        {% for post in site.posts limit:3 %}
           <div class="col-md-4 space-me">
             <div class="panel panel-default panel-case-study">
               <div class="panel-heading" style="background: url('{{ post.image }}'); background-size: cover;">
@@ -143,6 +144,7 @@ bodyid: home
                 <h3>
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h3>
+                <p>{{ post.description }}</p>
                 <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
               </div>
             </div>
