@@ -69,6 +69,16 @@ img {
     color: $brand-color;
   }
 }
+.btn-outline {
+  background: transparent;
+  border: 1px solid $brand-color;
+  color: $brand-color;
+  transition: 0.4s ease;
+  &:hover {
+    color: #fff;
+    background: $brand-color;
+  }
+}
 .label-jp {
   background: $brand-color;
 }
@@ -86,6 +96,10 @@ img {
   padding-bottom: $spacing-unit;
 }
 .panel-case-study {
+  transition: 0.4s ease;
+  &:hover {
+    border-color: $brand-color;
+  }
   .panel-heading {
     min-height: 200px;
     padding: 0;
@@ -173,14 +187,14 @@ img {
 }
 .feature-photo {
   width: 50%;
-  float: right;
+  float: left;
 }
 .fp-left {
-  background: url('/img/sparks.jpg') center;
+  background: url('/img/mine.jpg') center;
   background-size: cover;
 }
 .fp-right {
-  background: url('/img/mine.jpg') center;
+  background: url('/img/dustyBoots.jpg') center;
   background-size: cover;
 }
 #marcus {
@@ -228,7 +242,28 @@ img {
     align-items: center;
   }
 }
-
+.tags-list {
+  list-style-type: none;
+  margin-left: 0;
+  li {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 15px;
+    transition: 0.3s ease;
+  }
+  li:hover {
+    text-decoration: none;
+    border: 1px solid $brand-color;
+  }
+  i {
+    margin-right: 6px;
+    color: $brand-color;
+  }
+}
 /* =========================
         Pages General
 ========================= */
@@ -243,16 +278,56 @@ iframe {
   border-top: 1px solid #e0e0e0;
 }
 .sidenav-header {
-  background: url('/img/desert.jpg') center;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/img/port.jpg') top;
   background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 150px;
   color: #fff;
   text-shadow: 0 1px 5px rgba(0,0,0,0.55);
 }
 .sidenav-content {
   padding-bottom: $spacing-unit * 2;
+  ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: $brand-color;
+    border: 1px solid #ddd;
+    border-bottom: 0px;
+    background: #fff;
+    margin-bottom: $spacing-unit;
+  }
+  li {
+    list-style: none;
+    padding: 0px;
+    border-bottom: 1px solid #ddd;
+    a {
+      display: block;
+      width: 100%;
+      color: inherit;
+      padding: 15px 15px 15px 20px;
+      transition: 0.4s ease;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    i {
+      color: $brand-color;
+      margin-top: 4px;
+      padding-right: 10px;
+      transition: 0.4s ease;
+    }
+    &:hover {
+      border-color: $brand-color;
+      i {
+        padding: 0px;
+      }
+    }
+  }
+
 }
 /* =========================
-        Tolerance post
+        Posts
 ========================= */
 #tolerance-hero {
   padding-top: 250px;
@@ -265,6 +340,21 @@ iframe {
     background: rgba(0,0,0,0.4);
     color: #fff;
   }
+}
+#legislation-hero {
+  @extend #tolerance-hero;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/img/binos.jpg') center;
+  background-size: cover;
+}
+#glossary-hero {
+  @extend #tolerance-hero;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/img/plant.jpg') center;
+  background-size: cover;
+}
+#casestudy-hero {
+  @extend #tolerance-hero;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/img/nightPort.jpg') center;
+  background-size: cover;
 }
 /* =========================
         Sign Up Page
@@ -280,7 +370,6 @@ iframe {
     padding-bottom: $spacing-unit * 2;
     .fields {
       padding-top: $spacing-unit / 2;
-      padding-bottom: $spacing-unit / 2;
       div {
         margin-top: $spacing-unit / 2;
         margin-bottom: $spacing-unit / 2;
@@ -294,6 +383,9 @@ iframe {
     input[type="text"] {
       padding-left: 7px;
       width: 60%;
+    }
+    .helpers {
+      margin-left: 115px;
     }
   }
 }

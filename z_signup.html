@@ -11,15 +11,16 @@ permalink: /signup/
       <div class="col-md-offset-2 col-md-8">
         <div class="signup-panel">
           <h2>Sign up to the Journey Program</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Leave us your name and email address, and we will contact you with more information about getting started with the Journey Program.</p>
+
           <!-- Requires submitMailchimp.js which is based on this - https://github.com/rydama/mailchimp-ajax-signup/blob/master/ajax-subscribe.html -->
 
-          <form id="subscribe-form" action="http://uproute.us12.list-manage.com/subscribe/post-json?u=f94bb6fd3827dbeac084419cb&amp;id=e604fc132e" method="get" class="uproute-modal-signup">
+          <form id="subscribe-form" action="//cattaniconsulting.us7.list-manage.com/subscribe/post?u=f2882b329a21bf0917e06c21d&amp;id=5c4fd090d7" method="get" class="uproute-modal-signup">
 
             <div class="fields">
               <div>
                 <label for="nameSignup">Name </label>
-                <input type="text" placeholder="e.g. Han Solo" value="" name="NAME" id="nameSignup" >
+                <input type="text" placeholder="e.g. Han Solo" value="" name="FNAME" id="nameSignup" >
               </div>
               <div>
                 <label for="emailSignup">Email Address </label>
@@ -27,9 +28,10 @@ permalink: /signup/
               </div>
             </div>
 
-            <p id="subscribe-result"></p>
-
-            <input class="btn btn-jp-inverse" type="submit" value="Keep Me Updated" name="subscribe">
+            <div class="helpers">
+              <p id="subscribe-result"></p>
+              <input class="btn btn-jp-inverse" type="submit" value="Keep Me Updated" name="subscribe">
+            </div>
 
           </form>
         </div>

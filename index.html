@@ -10,7 +10,7 @@ bodyid: home
         <h1>Embrace a new philosophy</h1>
         <p>We think different when it comes to safety. Journey Program companies report fewer incidents, spend less on safety, and enjoy better workplace culture.</p>
         <br />
-        <p><a href="/tolerance/" class="btn btn-jp-inverse">Start by testing your risk tolerance</a></p>
+        <p><a href="/analyserisk/" class="btn btn-jp-inverse">Start by analysing your risk</a></p>
         <img src="/img/company.png" />
       </div>
     </div>
@@ -21,7 +21,7 @@ bodyid: home
   <ul class="list-inline">
     <li><span class="label label-jp">NEWS</span></li>
     <li>Interpret the new DMP operational legislation.</li>
-    <li><a href="/tolerance">Read more &nbsp; <i class="fa fa-arrow-right"></i></a></li>
+    <li><a href="/dmp-legislation">Read more &nbsp; <i class="fa fa-arrow-right"></i></a></li>
   </ul>
 </div>
 
@@ -31,7 +31,7 @@ bodyid: home
       <div class="col-md-4">
         <img src="img/glass.jpg" alt="A glass blower working" />
         <p><strong>Less compliance, more culture</strong></p>
-        <p>Safety performance is more than just compliance. Learn how to empower your staff and allow them to keep themselves and their colleagues safe. </p>
+        <p>Safety performance is more than just compliance. We'll show you how to change your organisation's culture to encourage safe operations. </p>
       </div>
       <div class="col-md-4">
         <img src="img/dryer.jpg" alt="An industrial dryer" />
@@ -82,11 +82,11 @@ bodyid: home
 
         <div class="panel panel-default panel-case-study">
           <div class="panel-heading">
-            <img src="/img/dustyBoots.jpg" />
+            <img src="/img/nightPort.jpg" />
           </div>
           <div class="panel-body text-center">
             <p class="lead">See the Journey Program in action.</p>
-            <a href="/casestudies" class="btn btn-success">View Case Study</a>
+            <a href="/casestudy" class="btn btn-success">View Case Study</a>
           </div>
         </div>
 
@@ -134,7 +134,8 @@ bodyid: home
       </div>
       <div class="row">
 
-        {% for post in site.posts limit:3 %}
+        {% for post in site.categories["helpyourself"] limit:3 %}
+
           <div class="col-md-4 space-me">
             <div class="panel panel-default panel-case-study">
               <div class="panel-heading" style="background: url('{{ post.image }}'); background-size: cover;">
@@ -149,6 +150,7 @@ bodyid: home
               </div>
             </div>
           </div>
+
         {% endfor %}
 
       </div>
