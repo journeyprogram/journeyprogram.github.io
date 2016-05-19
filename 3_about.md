@@ -10,10 +10,16 @@ nav: main
 
 <hr />
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The Journey Program was founded in 2010 by Dr Marcus Cattani, a leader in the field of safety management and performance leadership.
 
-Developed by Dr Marcus Cattani, supreme overlord of the risk management industry, The Journey Program is a practical, common sense approach that will change the way your people handle teamwork, safety and risk.
+Supported by his team, Marcus developed the Journey Program to assist organisations improve their safety performance by educating their leaders in a simple approach to risk management and communication. Instead of complex formulas, management jargon or ‘safety speak’, the Program uses intuitive phrases to assist people to manage risk whether they are the most Senior Manager or a team member.
 
-Reduce the time and cost involved with derisking your organisation.
+At the core of the Journey Program is a simple communication model used to illustrate the process of changing from the present state to the future state. This innovative and easily understood model becomes a mechanism to focus leadership and risk reduction efforts across the business.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+>“The Journey Program is very well structured, the facilitators were very interactive and allowed time to discuss on the job issues. I would highly recommend [The Journey Program] to other groups”
+>
+> Chris Thompson – MGI Training Supervisor
+
+The tools in the Program provide the participants with a mechanism to achieve their future state. Your more experienced leaders will be familiar with some of the tools and your new or untrained leaders will enjoy their simplicity and benefit. Together the management team will consistently and more efficiently manage the level of risk in the business.
+
+Journey is a practical program. We know that leaders would prefer not sit in a classroom for days at a time, watching a slideshow or taking notes for a test. Equally, we know that each client is different. The integrated components of the program are customised in line with your organisations’ needs, values and strategies.

@@ -10,12 +10,14 @@ permalink: /signup/
     <div class="row">
       <div class="col-md-offset-2 col-md-8">
         <div class="signup-panel">
-          <h2>Sign up to the Journey Program</h2>
+          <h1>Sign up to the Journey Program</h1>
           <p>Leave us your name and email address, and we will contact you with more information about getting started with the Journey Program.</p>
 
           <!-- Requires submitMailchimp.js which is based on this - https://github.com/rydama/mailchimp-ajax-signup/blob/master/ajax-subscribe.html -->
 
-          <form id="subscribe-form" action="//cattaniconsulting.us7.list-manage.com/subscribe/post?u=f2882b329a21bf0917e06c21d&amp;id=5c4fd090d7" method="get" class="uproute-modal-signup">
+          <!-- Remember post-json -->
+
+          <form id="subscribe-form" action="//cattaniconsulting.us7.list-manage.com/subscribe/post-json?u=f2882b329a21bf0917e06c21d&amp;id=5c4fd090d7" method="get" class="uproute-modal-signup">
 
             <div class="fields">
               <div>
@@ -30,10 +32,29 @@ permalink: /signup/
 
             <div class="helpers">
               <p id="subscribe-result"></p>
-              <input class="btn btn-jp-inverse" type="submit" value="Keep Me Updated" name="subscribe">
+              <input class="btn btn-jp-inverse" type="submit" value="Get Started" name="subscribe">
             </div>
 
           </form>
+
+          <hr />
+          <h2>Contact Us Directly</h2>
+          <p>You can also contact Marcus directly on: </p>
+
+          <ul class="list-unstyled">
+            <li>
+              <i class="fa fa-envelope-o"></i>
+              <script language="JavaScript">
+                var username = "marcus";
+                var hostname = "journeyprogram.com.au";
+                var linktext = username + "@" + hostname ;
+                document.write("<a target='_blank' href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
+              </script>
+            </li>
+            <li><i class="fa fa-phone-square"></i>+61 (0) 439 955 367</li>
+            <li><i class="fa fa-pencil-square-o"></i>PO Box 1611, Melville, Western Australia 6156</li>
+          </ul>
+
         </div>
       </div>
     </div>

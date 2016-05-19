@@ -32,7 +32,7 @@ h1 {
 hr {
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
-  border-color: rgba(61, 70, 77, 1.00);
+  border-color: rgb(218, 218, 218);
 }
 section {
   padding-top: $spacing-unit * 1.5;
@@ -357,11 +357,44 @@ iframe {
   background-size: cover;
 }
 /* =========================
+        Help Yourself Page
+========================= */
+#help-hero {
+  padding-top: 2 * $spacing-unit;
+  p {
+    margin: 1.8rem auto;
+    max-width: 700px;
+  }
+  .panel-body {
+    padding: 0px;
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/img/carSlide.jpg') center;
+    background-size: cover;
+    h2 {
+      padding-top: 120px;
+      padding-bottom: 120px;
+      color: #fff;
+      font-size: 1.8rem;
+      margin: 10px;
+      font-weight: 500;
+    }
+  }
+  .panel-footer {
+    background: #fff;
+    padding: 30px 50px;
+    text-align: left;
+  }
+}
+/* =========================
         Sign Up Page
 ========================= */
 #signup {
   background: url('/img/herobg.png') repeat;
   .signup-panel {
+    hr {
+      margin-top: $spacing-unit * 2;
+      margin-bottom: $spacing-unit * 2;
+    }
     background: #fff;
     border: 2px solid $brand-color;
     border-radius: 5px;
@@ -388,6 +421,10 @@ iframe {
       margin-left: 115px;
     }
   }
+  i {
+    color: $brand-color;
+    width: 40px;
+  }
 }
 /* =========================
         Footer
@@ -399,9 +436,6 @@ footer.site-footer {
   width: 100%;
   background: url('/img/herobg.png') repeat;
   color: #fff;
-  li:last-child {
-    display: none;
-  }
 }
 a {
   color: #f36256;

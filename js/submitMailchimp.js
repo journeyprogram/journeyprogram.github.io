@@ -14,12 +14,12 @@ $(document).ready(function(){
             $form.submit(function(e) {
                 e.preventDefault();
                 if (!isValidEmail($form)) {
-                    var error =  "A valid email address must be provided.";
+                    var error =  "Please provide a valid email address.";
                     $resultElement.html(error);
                     $resultElement.css("color", "red");
                 } else {
                     $resultElement.css("color", "black");
-                    $resultElement.html("Subscribing...");
+                    $resultElement.html("Sending data...");
                     submitSubscribeForm($form, $resultElement);
                 }
             });
@@ -52,16 +52,16 @@ $(document).ready(function(){
                 },
                 success: function(data){
                     if (data.result != "success") {
-                        var message = data.msg || "Sorry. Unable to subscribe. Please try again later.";
+                        var message = data.msg || "Sorry. Unable to send. Please email Marcus directly on marcus@journeyprogram.com.au";
                         $resultElement.css("color", "red");
                         if (data.msg && data.msg.indexOf("already subscribed") >= 0) {
-                            message = "You're already subscribed. Thank you.";
+                            message = "You've already left us your email. Thank you! If you'd like more information please email Marcus directly on marcus@journeyprogram.com.au";
                             $resultElement.css("color", "black");
                         }
                         $resultElement.html(message);
                     } else {
                         $resultElement.css("color", "black");
-                        $resultElement.html("Thank you!<br>You must confirm the subscription in your inbox.");
+                        $resultElement.html("Thank you! You should have a note from us in your inbox asking you to confirm that you're human. Click the link in the email and we'll be in touch!");
                     }
                 }
             });

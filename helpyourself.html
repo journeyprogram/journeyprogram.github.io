@@ -1,31 +1,26 @@
 ---
 layout: htmlpage
 title: Help Yourself
-subtitle: Help yourself to the Journey Program
+subtitle: Help Yourself to the Journey Program
 permalink: /helpyourself/
 nav: main
 bodyid: helpyourself
 ---
 
-<section id="feature-hero">
+<section id="help-hero">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 text-center">
-        <h1>{{ page.title }}</h1>
-        <p class="lead">{{ page.subtitle }}.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="help-1">
-  <div class="container">
-    <div class="row pad-me">
-      <div class="col-md-offset-1 col-md-10">
+      <div class="col-md-offset-1 col-md-10 text-center">
+        <h1>{{ page.subtitle }}</h1>
+        <p class="lead">A series of publicly available articles articles and resources designed to help you understand risk in your organisation.</p>
+        <hr />
         <div class="panel panel-default">
           <div class="panel-body">
-            <p>To improve your current performance, you need to know what your starting point is. Analyse how you currently tolerate risk with a 15 question test.</p>
-            <p><a href="/tolerance/" class="btn btn-jp-inverse">Test your risk tolerance</a></p>
+            <h2>Analyse Your Organisation's Risk Profile</h2>
+          </div>
+          <div class="panel-footer">
+            <p>To improve your current performance, you need to know what your starting point is. Take a 10 question assessment that delivers immediate feedback on your organisation's risk profile.</p>
+            <p class="text-center"><a href="/analyserisk/" class="btn btn-jp-inverse">Discover Your Risk Profile</a></p>
           </div>
         </div>
       </div>
@@ -33,29 +28,28 @@ bodyid: helpyourself
   </div>
 </section>
 
-<section id="help-2">
-  <div class="container">
-    <div class="row pad-me">
-      <div class="col-md-offset-1 col-md-5">
+<div class="container">
+  <div class="row">
+    {% for post in site.posts limit:3 offset:1 %}
 
-        <div class="panel panel-default">
+      <div class="col-md-4 space-me">
+        <div class="panel panel-default panel-case-study">
+          <div class="panel-heading" style="background: url('{{ post.image }}'); background-size: cover;">
+
+          </div>
           <div class="panel-body">
-            <p>To improve your current performance, you need to know where you're starting point is. Analyse how you currently tolerate risk with a 15 question test.</p>
+            <h3>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h3>
+            <p>{{ post.description }}</p>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
           </div>
         </div>
-
       </div>
-      <div class="col-md-5">
 
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <p>To improve your current performance, you need to know where you're starting point is. Analyse how you currently tolerate risk with a 15 question test.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
+    {% endfor %}
   </div>
-</section>
+</div>
+
 
 {% include bottomcta.html %}
