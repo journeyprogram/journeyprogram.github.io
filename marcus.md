@@ -9,6 +9,8 @@ permalink: /marcus/
 
 <hr />
 
+![Marcus Cattani](/img/marcuscrop2.jpg)
+
 Dr Cattani is one of Australia’s leading occupational health and safety specialists. The Journey Program is the culmination of his 25 years’ experience helping high risk businesses – in utilities, mining, construction, chemicals and aerospace - to reduce their exposure to the devastating cost of safety failure.
 
 An expert in the field of safety leadership and performance management, Dr Cattani’s breakthrough program tackles the last major frontier in safety risk – the human factor. His step-by-step approach uses simple yet effective behavioural techniques to generate the employee awareness and commitment needed to sustain an injury free workplace.

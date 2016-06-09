@@ -154,6 +154,8 @@ img {
 ========================= */
 #hero {
   padding-bottom: 0;
+  background: #29272a;
+  color: #fff;
   p {
     max-width: 750px;
     margin-left: auto;
@@ -161,7 +163,8 @@ img {
     font-size: 1.1rem;
   }
   img {
-    margin-bottom: 0;
+    margin: 0px auto;
+    max-width: 70%;
   }
 }
 .after-hero {
@@ -213,7 +216,7 @@ img {
       float: left;
       margin-left: -1px;
       width: 40%;
-      background: url('/img/jonsnow.jpg') center;
+      background: url('/img/marcuscrop.jpg') center;
       background-size: cover;
     }
     .info {
@@ -326,6 +329,66 @@ iframe {
   }
 
 }
+// ============================
+//      Org profiles
+// ============================
+.quiz-container {
+  background: #fff;
+  width: 100%;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  padding: 25px;
+}
+.questions {
+  margin-bottom: 1rem;
+  padding: 15px;
+  .corset {
+    width: 600px;
+    margin: 0px auto;
+  }
+}
+.intro-slide {
+  p,
+  img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p {
+    max-width: 600px;
+  }
+  img {
+    max-width: 350px;
+    margin-top: $spacing-unit / 2;
+    margin-bottom: $spacing-unit / 2;
+  }
+}
+.pagination-container {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.slick-disabled {
+  visibility: hidden;
+}
+.slick-slide {
+    outline: none
+}
+.radio {
+  margin: 1rem 2rem;
+}
+.results {
+  margin-top: $spacing-unit;
+  display: flex;
+  align-items: center;
+  img {
+    width: 100px;
+    margin: 0px auto;
+  }
+}
+.prev {
+  margin-right: 3rem;
+}
+
 /* =========================
         Posts
 ========================= */
@@ -389,18 +452,17 @@ iframe {
         Sign Up Page
 ========================= */
 #signup {
-  background: url('/img/herobg.png') repeat;
   .signup-panel {
-    hr {
-      margin-top: $spacing-unit * 2;
-      margin-bottom: $spacing-unit * 2;
-    }
     background: #fff;
-    border: 2px solid $brand-color;
+    border: 1px solid $brand-color;
     border-radius: 5px;
     margin-top: $spacing-unit;
     padding: $spacing-unit;
     padding-bottom: $spacing-unit * 2;
+    hr {
+      margin-top: $spacing-unit * 2;
+      margin-bottom: $spacing-unit * 2;
+    }
     .fields {
       padding-top: $spacing-unit / 2;
       div {
