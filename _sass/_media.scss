@@ -1,0 +1,115 @@
+
+@media screen and (max-width: 768px) {
+  .navbar-default {
+    .navbar-brand {
+      padding-top: 15px;
+    }
+    .navbar-nav {
+      text-align: center;
+      li:last-child {
+        a {
+          border-radius: 0px;
+        }
+      }
+    }
+  }
+  .quiz-container {
+    padding: 5px;
+    .questions {
+      padding: 5px;
+      .radio {
+        margin-left: 0px;
+      }
+    }
+    .pagination-container {
+      margin-top: 10px;
+    }
+  }
+  .corset { // TODO -- Make this dry with signup stuff
+    .helpers {
+      margin-top: 30px;
+      margin-left: 0px;
+    }
+    input[type="email"],
+    input[type="text"] {
+      width: 100% !important;
+    }
+  }
+  .sidenav-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #help-hero {
+    .panel-body,
+    .panel-footer {
+      h2 {
+        padding-top: 75px;
+      }
+      padding: 15px;
+      .btn {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+  #signup {
+    .signup-panel {
+      padding: 15px;
+      margin-top: 0px;
+      .helpers {
+        margin-top: 30px;
+        margin-left: 0px;
+      }
+      ul {
+        margin-left: 0px;
+        li {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    input[type="email"],
+    input[type="text"] {
+      width: 100% !important;
+    }
+  }
+  footer {
+    .list-inline {
+      margin-top: $spacing-unit;
+      margin-bottom: $spacing-unit;
+      li {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #marcus {
+    .marcus-wrapper {
+      display: block;
+      align-items: initial;
+      .photo,
+      .info {
+        float: none;
+        width: 100%;
+      }
+      .photo {
+        height: 350px;
+      }
+    }
+  }
+  #product-hero {
+    padding-top: 50px;
+    img {
+      max-width: 60%;
+    }
+  }
+  .product {
+    .row {
+      display: block;
+    }
+  }
+  .results {
+    display: block;
+  }
+}

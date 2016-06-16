@@ -16,11 +16,11 @@ bodyid: helpyourself
         <hr />
         <div class="panel panel-default">
           <div class="panel-body">
-            <h2>Analyse Your Organisation's Risk Profile</h2>
+            <h2>Predict your organisation's liklihood of an incident</h2>
           </div>
           <div class="panel-footer">
-            <p>To improve your current performance, you need to know what your starting point is. Take a 10 question assessment that delivers immediate feedback on your organisation's risk profile.</p>
-            <p class="text-center"><a href="/profile/" class="btn btn-jp-inverse">Discover Your Risk Profile</a></p>
+            <p>This quick assessment provides a high level overview of your organisation's character profiles accross different aspects of the business.</p>
+            <p class="text-center"><a href="/profile/" class="btn btn-jp-inverse">Analyse your organisational character</a></p>
           </div>
         </div>
       </div>
@@ -30,9 +30,9 @@ bodyid: helpyourself
 
 <div class="container">
   <div class="row">
-    {% for post in site.posts limit:3 offset:1 %}
+    {% for post in site.posts limit:2 offset:1 %}
 
-      <div class="col-md-4 space-me">
+      <div class="col-md-6 space-me">
         <div class="panel panel-default panel-case-study">
           <div class="panel-heading" style="background: url('{{ post.image }}'); background-size: cover;">
 

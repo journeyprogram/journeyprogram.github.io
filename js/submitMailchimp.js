@@ -55,13 +55,15 @@ $(document).ready(function(){
                         var message = data.msg || "Sorry. Unable to send. Please email Marcus directly on marcus@journeyprogram.com.au";
                         $resultElement.css("color", "red");
                         if (data.msg && data.msg.indexOf("already subscribed") >= 0) {
-                            message = "You've already left us your email. Thank you! If you'd like more information please email Marcus directly on marcus@journeyprogram.com.au";
+                            message = "Aha, you've been here already. Carry on!";
                             $resultElement.css("color", "black");
+                            $('.next').prop('disabled', false);
                         }
                         $resultElement.html(message);
                     } else {
                         $resultElement.css("color", "black");
                         $resultElement.html("Thank you! You should have a note from us in your inbox asking you to confirm that you're human. Click the link in the email and we'll be in touch!");
+                        $('.next').prop('disabled', false);
                     }
                 }
             });

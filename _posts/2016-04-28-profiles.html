@@ -4,6 +4,9 @@ title: Organisational Character Profiles
 subtitle: Which profile best fits your organisation?
 permalink: /profile/
 bodyid: profile
+categories: helpyourself
+image: /img/carSlide.jpg
+description: We've produced 14 questions designed to analyse 3 key elements of your organisational performance.
 ---
 
 <div class="container">
@@ -11,6 +14,11 @@ bodyid: profile
     <div class="col-sm-12">
 
       <div class="quiz-container">
+
+        <div class="progress" style="visibility: hidden;">
+          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" id="progressBar">
+          </div>
+        </div>
 
         <div class="questions-container">
 
@@ -231,7 +239,7 @@ bodyid: profile
 
           <div class="questions">
             <div class="corset">
-              <p class="lead">11. We have good position descriptions</p>
+              <p class="lead">11. We comply to the legislation</p>
               <div class="radio">
                 <label><input type="radio" name="question11" value="a">I hope we do, but to be honest, I am not sure</label>
               </div>
@@ -314,35 +322,77 @@ bodyid: profile
           </div>
 
           <div class="questions" id="character-results">
-            <h3>Your Organisational Character</h3>
-            <p>Successful organisations exhibit high levels of performance three key elements of a business: leadership, systems, and people. It takes engaged people, targeted systems, and effective leadership to ensure high performance throughout all departments of an organisation.</p>
-            <hr />
+            <div class="corset">
+              <h3>Your Organisational Character</h3>
+              <p>Successful organisations exhibit high levels of performance three key elements of a business: leadership, systems, and people. It takes engaged people, targeted systems, and effective leadership to ensure high performance throughout all departments of an organisation.</p>
+              <p><strong>Please enter your email to see your organisational character.</strong></p>
+
+              <form id="subscribe-form" action="//cattaniconsulting.us7.list-manage.com/subscribe/post-json?u=f2882b329a21bf0917e06c21d&amp;id=5c4fd090d7" method="get" class="jp-signup">
+
+                <div class="fields">
+                  <div>
+                    <label for="emailSignup">Email Address </label>
+                    <input type="email" placeholder="e.g. hansolo@gmail.com" value="" name="EMAIL" id="emailSignup" >
+                  </div>
+                </div>
+
+                <div class="helpers">
+                  <p id="subscribe-result"></p>
+                  <input class="btn btn-outline btn-sm" type="submit" value="Check email" name="subscribe">
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+          <div class="questions" id="character-results">
             <div class="row results">
+              <div class="col-md-4">
+                <img id="leadership-image" src="" />
+              </div>
               <div class="col-md-7">
                 <p class="lead">Your <strong>leadership</strong> profile is: <span id="leadership-score"></span></p>
                 <p id="leadership-blurb"></p>
               </div>
-              <div class="col-md-offset-1 col-md-4">
-                <img id="leadership-image" src="" />
-              </div>
             </div>
+          </div>
+
+          <div class="questions" id="character-results">
             <div class="row results">
               <div class="col-md-4">
                 <img id="people-image" src="" />
               </div>
-              <div class="col-md-offset-1 col-md-7">
+              <div class="col-md-7">
                 <p class="lead">Your <strong>people</strong> profile is: <span id="people-score"></span></p>
                 <p id="people-blurb"></p>
               </div>
             </div>
+          </div>
+
+          <div class="questions" id="character-results">
             <div class="row results">
+              <div class="col-md-4">
+                <img id="systems-image" src="" />
+              </div>
               <div class="col-md-7">
                 <p class="lead">Your <strong>systems</strong> profile is: <span id="systems-score"></span></p>
                 <p id="systems-blurb"></p>
               </div>
-              <div class="col-md-offset-1 col-md-4">
-                <img id="systems-image" src="" />
-              </div>
+            </div>
+          </div>
+
+          <div class="questions" id="character-results">
+            <div class="corset text-center">
+              <h2>Congratulations on completing your analysis!</h2>
+              <p>The Journey Program has developed two predictive algorithms that companies are using to predict the likelihood and location of major incidents occurring throughout the different areas of their organisations.</p>
+              <p>Please contact Marcus directly on <script language="JavaScript">
+                var username = "marcus";
+                var hostname = "journeyprogram.com.au";
+                var linktext = username + "@" + hostname ;
+                document.write("<a target='_blank' href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
+              </script></p>
+              <br />
+              <p><a href="/downloads/JourneyProgramWhitepaper.pdf" class="btn btn-outline" target="_blank" download><i class="fa fa-download"></i> &nbsp; Download the Journey Program whitepaper </a></p>
             </div>
           </div>
 
@@ -355,7 +405,7 @@ bodyid: profile
 
       </div>
 
-      <p class="small text-right">A Journey Program calculation performed in WA</p>
+      <p class="small text-right hidden-xs">A Journey Program calculation performed in WA</p>
 
     </div>
   </div>
