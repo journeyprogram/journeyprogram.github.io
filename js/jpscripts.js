@@ -30,10 +30,6 @@ $('a.smooth_scroll').click(function(){
 
 dynanicPhotoHeight();
 
-$( window ).resize(function() {
-  dynanicPhotoHeight();
-});
-
 function dynanicPhotoHeight() {
   var featurePhotoWidth = $( ".feature-photo" ).width();
   $(".feature-photo").css("height", (featurePhotoWidth * 0.66));
@@ -42,10 +38,6 @@ function dynanicPhotoHeight() {
 // Dynamically set bottom margin of body for sticky footer
 
 stickyFooter();
-
-$( window ).resize(function() {
-  stickyFooter();
-});
 
 function stickyFooter() {
   var bodyBottomMargin = $( ".site-footer" ).outerHeight();
@@ -60,8 +52,9 @@ function signupHeight() {
 
 signupHeight();
 
+// Window resize
 $( window ).resize(function() {
  signupHeight();
+ stickyFooter();
+ dynanicPhotoHeight();
 });
-
-console.log(runCheck);

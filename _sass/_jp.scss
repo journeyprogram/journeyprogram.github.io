@@ -282,6 +282,26 @@ img {
   }
 }
 /* =========================
+        Beta
+========================= */
+#beta {
+  #beta-hero {
+    padding: 0;
+    height: 90vh;
+    .typeform-widget {
+      height: 90vh;
+      width: 100%;
+      iframe {
+        height: 100%;
+      }
+    }
+  }
+  #bottomcta {
+    display: none;
+  }
+}
+
+/* =========================
         Pages General
 ========================= */
 iframe {
