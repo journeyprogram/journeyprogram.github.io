@@ -22,4 +22,4 @@ An expert in the field of safety leadership and performance management, Dr Catta
 
 Underpinned by good science and practical business thinking, the modular program is one of the first of its kind for employees and team leaders whose attitude critically impacts safety behaviour on the shopfloor. It uses a dynamic combination of leadership, strategic planning, risk management and occupational hygiene to forecast, manage and control safety risk ... with outstanding results.
 
-A sought-after presenter, trainer and executive coach, Dr Cattani is a member of the Australian Institute of Occupational Hygienists and Adjunct Senior Lecturer at the Appleton Institute, of Central Queensland University, where his simple yet effective method is helping to guide safety thinking for a new generation.
+A sought-after presenter, trainer and executive coach, Dr Cattani is a Chartered member of the Safety Insitutute of Australia, a member of the Australian Institute of Occupational Hygienists and a Senior Lecturer at Edith Cowan University, where his simple yet effective method is helping to guide safety thinking for a new generation.
